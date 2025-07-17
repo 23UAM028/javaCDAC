@@ -2,6 +2,7 @@ import java.util.Scanner;
 public class String_Palindrome {
 
 	public static void main(String[] args) {
+		
 		System.out.println("Enter String");
 	
 		Scanner sc=new Scanner(System.in);
@@ -9,12 +10,14 @@ public class String_Palindrome {
 		String st=sc.nextLine(); 
 		
 		
-		
 		StringBuilder stb=new StringBuilder();
+		
 		stb.reverse();
+		
 		String s=stb.toString();
 		
 		if(s.equals(st))System.out.println("Give String is palindrom:");
+		
 		else System.out.println("Give String is not palindrom:");
 		
 		sc.close();
